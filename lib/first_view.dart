@@ -153,6 +153,46 @@ class FirstView extends StatelessWidget {
               ),
             ),
           ),
+          Align(
+            alignment: const Alignment(1.8, 0.25),
+            child: Transform.rotate(
+              angle: 7,
+              child: Image(
+                image: const AssetImage('assets/images/watersplash.png'),
+                height: size.height * 0.27,
+              ),
+            ),
+          ),
+          Align(
+            alignment: const Alignment(0.5, -0.2),
+            child: Transform.rotate(
+              angle: 7,
+              child: Image(
+                image: const AssetImage('assets/images/watersplash.png'),
+                height: size.height * 0.1,
+              ),
+            ),
+          ),
+          Align(
+            alignment: const Alignment(3, -1.1),
+            child: Transform.rotate(
+              angle: 7,
+              child: Image(
+                image: const AssetImage('assets/images/watersplash.png'),
+                height: size.height * 0.25,
+              ),
+            ),
+          ),
+          Align(
+            alignment: const Alignment(-3, 1.5),
+            child: Transform.rotate(
+              angle: 8,
+              child: Image(
+                image: const AssetImage('assets/images/watersplash.png'),
+                height: size.height * 0.26,
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -177,7 +217,7 @@ class DesignBox extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 5),
       height: height,
-      width: size.width * 0.22, 
+      width: size.width * 0.22,
       decoration: BoxDecoration(
         color: fillColor,
         borderRadius: BorderRadius.circular(8),
