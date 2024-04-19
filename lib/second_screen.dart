@@ -1,14 +1,15 @@
 // import 'dart:js_interop';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:fruit_app/clip.dart';
 import 'package:fruit_app/first_view.dart';
 import 'package:fruit_app/utilities/colors.dart';
 
 class SecondView extends StatelessWidget {
-  const SecondView({super.key});
+   SecondView({super.key});
+
+  final List<String> fruits = [
+    
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -76,10 +77,8 @@ class SecondView extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Image(
-                          image: const AssetImage('assets/images/woman.png'),
-                          fit: BoxFit.cover,
-                          height: size.height * 0.4,
+                        const Image(
+                          image: AssetImage('assets/images/woman.png'),
                         )
                       ],
                     ),
@@ -193,14 +192,14 @@ class DisplayCard extends StatelessWidget {
         child: Stack(
           children: [
             Align(
-              alignment: Alignment(-0.8, 0.8),
+              alignment: const Alignment(-0.8, 0.8),
               child: Image(
                 height: size.height * 0.1,
-                image: AssetImage('assets/images/mango.png'),
+                image: const AssetImage('assets/images/mango.png'),
               ),
             ),
             Align(
-              alignment: Alignment(0.8, -0.8),
+              alignment: const Alignment(0.8, -0.8),
               child: SizedBox(
                 height: size.height * 0.06,
                 child: Column(
@@ -223,9 +222,9 @@ class DisplayCard extends StatelessWidget {
               ),
             ),
             Align(
-              alignment: Alignment(1.05, 1.05),
+              alignment: const Alignment(1.05, 1.05),
               child: Container(
-                height: size.height * 0.02,
+                height: size.height * 0.021,
                 width: size.width * 0.04,
                 decoration: BoxDecoration(
                     color: CustomColors.primaryColor,
